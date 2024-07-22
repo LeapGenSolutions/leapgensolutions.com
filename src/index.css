@@ -357,8 +357,42 @@ body {
 
 .slider-track {
   display: flex;
-  animation: slide 10s linear infinite; /* Adjust duration as needed */
-  gap: 10px;
+  animation: slide 20s linear infinite; /* Adjust duration as needed */
+  cursor: pointer;
+}
+
+.slider-track:hover {
+  animation-play-state: paused;
+}
+
+.div_blur {
+  position: absolute;
+  left: 0;
+  height: 500px;
+  width: 150px;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0.629),
+    rgba(255, 255, 255, 0)
+  );
+  box-shadow: none;
+}
+
+.div_blur2 {
+  position: absolute;
+  right: 0;
+  height: 500px;
+  width: 150px;
+  background-image: linear-gradient(
+    to left,
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0.629),
+    rgba(255, 255, 255, 0)
+  );
+  box-shadow: none;
 }
 
 .partner-image {
@@ -424,6 +458,31 @@ body {
 }
 
 .gradient-button:hover svg {
+  transform: rotate(0deg);
+}
+
+/* Button Gradient White */
+.gradient-button-white {
+  background-color: #fff;
+  color: #40baff;
+  transition: background-image 5s ease-in-out;
+  transition: margin-left 0.3s ease-in-out;
+  margin-left: 0px;
+}
+
+.gradient-button-white:hover {
+  margin-left: 5px;
+}
+
+.gradient-button-white:hover .span {
+  margin-left: -5px;
+}
+
+.gradient-button-white svg {
+  transform: rotate(-45deg);
+}
+
+.gradient-button-white:hover svg {
   transform: rotate(0deg);
 }
 
@@ -501,4 +560,99 @@ body {
 
 .plans_box:hover {
   transform: translateY(-10px);
+}
+
+/* Success Stories */
+.card-container {
+  position: relative;
+  height: 800px; /* Adjust height as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.card {
+  position: absolute;
+  background-color: #fff;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+  padding: 48px 64px 0;
+  transition: transform 0.3s ease-in-out, z-index 0.3s;
+  display: flex;
+  flex-direction: row;
+  gap: 96px;
+  max-width: 1280px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Connect With Us */
+.connectwithus {
+  background-image: linear-gradient(
+    96.65897240035821deg,
+    #5456ed,
+    rgb(64, 186, 255)
+  );
+}
+
+/* src/App.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.card-container-core-comp {
+  width: 30%;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-core-comp {
+  background-color: #2c2c54;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  font-size: 1rem;
+}
+
+.card-image {
+  background-color: #40407a;
+  padding: 16px;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.card-container:hover {
+  transform: translateY(-10px);
+}
+
+.card.active {
+  transform: scale(1.05);
 }

@@ -5,6 +5,10 @@ import Footer from "../components/Footer";
 import PublicServices from "./PublicServices";
 import CoreValues from "./CoreValues";
 import Plans from "./Plans";
+import SuccessStories from "./SuccessStories";
+import Partners from "./Partners";
+import ConnectWithUs from "./ConnectWithUs";
+import CoreComponents from "./CoreComponents";
 
 const Home = (props) => {
   const heroRef = useRef(null);
@@ -46,7 +50,11 @@ const Home = (props) => {
       </div>
       <PublicServices />
       <CoreValues />
+      <CoreComponents />
+      <SuccessStories />
       <Plans />
+      <Partners />
+      <ConnectWithUs />
       <Footer handleMenuClick={handleMenuClick} />
     </div>
   );

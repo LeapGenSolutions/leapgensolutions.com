@@ -11,34 +11,40 @@ import Hero6 from "../assets/hero_img6.avif";
 const Hero = () => {
   const cards = [
     {
-      image: Hero1, // Replace with your image URL
-      title: "Innovating the Future of IT Solutions",
-    },
-    // Add more card objects here
-    {
       image: Hero2, // Replace with your image URL
-      title: "Innovating the Future of IT Solutions",
-    },
-    {
-      image: Hero3, // Replace with your image URL
-      title: "Card Title 6",
-    },
-    {
-      image: Hero4, // Replace with your image URL
-      title: "Card Title 6",
-    },
-    {
-      image: Hero5, // Replace with your image URL
-      title: "Card Title 6",
+      title: "Customized AI Solutions for Your Needs",
     },
     {
       image: Hero6, // Replace with your image URL
-      title: "Card Title 6",
+      title: "Driving Efficiency with LeapGen AI",
+    },
+    {
+      image: Hero4, // Replace with your image URL
+      title: "Seamless Integration, Superior Performance",
+    },
+    {
+      image: Hero3, // Replace with your image URL
+      title: "Innovating the Future of IT Solutions",
+    },
+    {
+      image: Hero1, // Replace with your image URL
+      title: "Empowering Businesses with AI",
+    },
+    {
+      image: Hero5, // Replace with your image URL
+      title: "Transforming Professional Services with Technology",
     },
   ];
 
+  const infiniteFeatures = [...cards, ...cards];
+
   return (
-    <section className="flex items-center p-[40px] max-md:h-fit bg-[linear-gradient(180deg, #f6f7ff 0%, rgb(255, 255, 255) 100%);] flex-wrap max-md:p-8 gap-[80px]">
+    <section
+      style={{
+        background: "linear-gradient(180deg,#f6f7ff 0%,rgb(255,255,255) 100%)",
+      }}
+      className="flex items-center p-[40px] max-md:h-fit flex-wrap max-md:p-8 gap-[80px]"
+    >
       <div className="flex flex-col gap-[20px]">
         <div className="flex flex-col justify-start opacity-100 flex-shrink-0 transform-none">
           <h1 className="text-[50px] font-bold">Modernize your Solutions</h1>
@@ -55,7 +61,7 @@ const Hero = () => {
       </div>
       <div className="slider">
         <div className="slider-track gap-[10px]">
-          {cards.map((card, index) => (
+          {infiniteFeatures.map((card, index) => (
             <div
               key={index}
               className="relative group overflow-hidden rounded-lg shadow-lg w-[360px] h-[500px]"
@@ -66,16 +72,20 @@ const Hero = () => {
                 className="w-[360px] h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 flex items-center justify-center group-hover:bg-opacity-75">
-                <div className="absolute inset-0 p-4 bg-black bg-opacity-50 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex items-center justify-center">
-                  <span className="text-white text-lg">{card.title}</span>
+                <div className="absolute inset-0 p-6 bg-black bg-opacity-20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex">
+                  <span className="text-white text-[28px] text-wrap">
+                    {card.title}
+                  </span>
                 </div>
               </div>
             </div>
           ))}
         </div>
+        <div className="div_blur" />
+        <div className="div_blur2" />
       </div>
-      <div className="flex flex-row items-center justify-between w-full">
-        <div className="flex flex-col justify-start opacity-100 flex-shrink-0 transform-none">
+      <div className="flex flex-row items-center justify-between w-full px-4 gap-[50px]">
+        <div className="flex flex-col justify-start opacity-100 flex-shrink-0 transform-none flex-1">
           <h3 className="text-[34px] font-bold">We Helped Businesses In</h3>
           <div className="flex flex-row gap-[15px] items-center">
             <h3 className="text-[34px] font-bold">Generating</h3>
@@ -84,27 +94,23 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-row items-center justify-between gap-[30px]">
+        <div className="flex flex-row items-center justify-between gap-[30px] flex-1">
           <div>
             <h3 className="text-[50px] font-bold">98%</h3>
             <p className="text-[18px] text-[#353535] font-[600]">
-              Client
-              <br />
-              Satisfaction
+              Client Satisfaction
             </p>
           </div>
           <div>
             <h3 className="text-[50px] font-bold">89%</h3>
             <p className="text-[18px] text-[#353535] font-[600]">
-              Revenue <br />
-              Increased
+              Revenue Increased
             </p>
           </div>
           <div>
             <h3 className="text-[50px] font-bold">15k+</h3>
             <p className="text-[18px] text-[#353535] font-[600]">
-              Happy <br />
-              Customers
+              Happy Customers
             </p>
           </div>
         </div>

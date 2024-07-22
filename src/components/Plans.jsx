@@ -28,7 +28,7 @@ function Plans() {
   ];
 
   return (
-    <div className="corevalues_background">
+    <div className="flex flex-col items-center py-[80px]">
       <h2 className="text-[36px] font-bold gradient-text">✦ Plans</h2>
       <p className="text-[#252525] text-[16px] font-[500] mt-[20px] text-center">
         Discover how LeapGen Solutions leverages AI to transform professional
