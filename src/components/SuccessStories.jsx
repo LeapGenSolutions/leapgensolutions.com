@@ -61,7 +61,7 @@ function Card({
         <p>{desc2}</p>
         <p>{desc3}</p>
       </div>
-      <img className="w-[360px] h-[510px] rounded-[12px]" src={image} />
+      <img className="w-[360px] h-[510px] rounded-[12px]" src={image}  alt=""/>
     </animated.div>
   );
 }

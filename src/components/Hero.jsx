@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "../index.css";
 import Logo from "../assets/logo.avif";
@@ -7,7 +8,6 @@ import Hero3 from "../assets/hero_img3.avif";
 import Hero4 from "../assets/hero_img4.webp";
 import Hero5 from "../assets/hero_img5.avif";
 import Hero6 from "../assets/hero_img6.avif";
-
 const Hero = () => {
   const cards = [
     {
@@ -50,7 +50,7 @@ const Hero = () => {
           <h1 className="text-[50px] font-bold">Modernize your Solutions</h1>
           <div className="flex flex-row gap-[15px] items-center">
             <h1 className="text-[50px] font-bold">powered by</h1>
-            <img className="w-[50px] h-[50px]" src={Logo} />
+            <img className="w-[50px] h-[50px]" src={Logo} alt ="" />
             <h1 className="text-[50px] font-bold">Leapgen</h1>
           </div>
         </div>

@@ -8,7 +8,7 @@ function PublicServices() {
     <div className="relative px-[120px] py-[100px]">
       <img
         className="w-[600px] h-[500px] rounded-[30px]"
-        src={PublicServicesImg}
+        src={PublicServicesImg}  alt=""
       />
       <div className="absolute top-0 bottom-0 right-[120px] flex items-center justify-center w-[645px]">
         <div className="public_services_box">

@@ -1,9 +1,4 @@
-import React, { useState } from "react";
-import CoreComp1 from "../assets/corecomponents/corecomp1.avif";
-import CoreComp2 from "../assets/corecomponents/corecomp2.avif";
-import CoreComp3 from "../assets/corecomponents/corecomp3.avif";
-import CoreComp4 from "../assets/corecomponents/corecomp4.avif";
-import CoreComp5 from "../assets/corecomponents/corecomp5.avif";
+import React from "react";
 import "../index.css";
 import Carousel from "./Carousel";
 

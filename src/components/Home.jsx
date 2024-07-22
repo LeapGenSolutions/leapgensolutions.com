@@ -40,6 +40,7 @@ const Home = (props) => {
       });
       props.setloadHistory(false);
     }
+    /* eslint-disable react-hooks/exhaustive-deps */
   }, [props.loadHistory]);
 
   return (
