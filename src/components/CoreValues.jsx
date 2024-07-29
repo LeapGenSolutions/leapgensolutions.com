@@ -48,7 +48,7 @@ function CoreValues() {
         {values.map((data, index) => {
           return (
             <div key={index} className="corevalues_box">
-              <img className="h-[40px] w-[40px]" src={data.image} alt="" />
+              <img className="h-[40px] w-[40px]" src={data.image} />
               <h3 className="text-[20px] font-bold">{data.name}</h3>
               <p className="text-[14px] text-[#53535C]">{data.description}</p>
             </div>

@@ -50,7 +50,7 @@ function Plans() {
                       key={index}
                       className="flex flex-row items-center gap-[10px]"
                     >
-                      <img className="h-[24px] w-[24px]" src={CheckIcon} alt="" />
+                      <img className="h-[24px] w-[24px]" src={CheckIcon} />
                       <p className="text-[#666666] text-[14px] font-[600]">
                         {item}
                       </p>

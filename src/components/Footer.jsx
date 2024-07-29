@@ -5,7 +5,7 @@ function Footer({ handleMenuClick }) {
   return (
     <footer className="bg-[#FBFBFB] text-white px-[95px] pt-[80px] pb-[40px] border-t-[0.2px] border-t-[rgb(251, 251, 251)] flex flex-col gap-[50px] max-md:p-[30px]">
       <div className="mx-auto flex flex-col items-center justify-center gap-[25px]">
-        <img className="w-[286px] h-[48px] mr-[1rem]" src={Logo} alt="" />
+        <img className="w-[286px] h-[48px] mr-[1rem]" src={Logo} />
 
         {/* Navigation Links */}
         <nav>

@@ -8,7 +8,7 @@ function ConnectWithUs() {
       <div className="flex flex-col gap-[20px]">
         <h2 className="text-[36px] text-[#fff] font-[600]">ConnectWithUs</h2>
         <div className="flex flex-row gap-[20px]">
-          <a target="_blank" rel="noreferrer" href="https://x.com/LeapgenAi">
+          <a target="_blank" href="https://x.com/LeapgenAi">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 256 256"
@@ -22,7 +22,6 @@ function ConnectWithUs() {
           </a>
           <a
             target="_blank"
-            rel="noreferrer"
             href="https://www.instagram.com/leapgen_solutions/"
           >
             <svg
@@ -38,7 +37,6 @@ function ConnectWithUs() {
           </a>
           <a
             target="_blank"
-            rel="noreferrer"
             href="https://www.linkedin.com/company/leap-gen-solutions/"
           >
             <svg
@@ -52,7 +50,7 @@ function ConnectWithUs() {
               </g>
             </svg>
           </a>
-          <a target="_blank" rel="noreferrer" href="https://www.youtube.com/@LeapGenSolutions">
+          <a target="_blank" href="https://www.youtube.com/@LeapGenSolutions">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 256 256"

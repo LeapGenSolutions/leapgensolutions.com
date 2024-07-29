@@ -61,7 +61,7 @@ function Card({
         <p>{desc2}</p>
         <p>{desc3}</p>
       </div>
-      <img className="w-[360px] h-[510px] rounded-[12px]" src={image}  alt=""/>
+      <img className="w-[360px] h-[510px] rounded-[12px]" src={image} />
     </animated.div>
   );
 }
@@ -108,7 +108,20 @@ function SuccessStories() {
     ></Card>,
   ];
 
-  return <div className="card-container">{cards}</div>;
+  return (
+    <div className="flex flex-col items-center py-[80px]">
+      <h2 className="text-[36px] font-bold gradient-text">✦ Success Stories</h2>
+      <p className="text-[#252525] text-[16px] font-[500] mt-[20px] text-center mb-[50px]">
+        Dive into LeapGen Solutions Success Stories, where we celebrate the
+        tangible <br /> impacts of our AI initiatives across various industries.
+        These narratives showcase the <br />
+        strategic implementation of our AI and analytics expertise, resulting in
+        significant <br />
+        advancements for our clients.
+      </p>
+      <div className="card-container">{cards}</div>
+    </div>
+  );
 }
 
 export default SuccessStories;

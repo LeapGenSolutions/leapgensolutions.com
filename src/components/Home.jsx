@@ -9,6 +9,7 @@ import SuccessStories from "./SuccessStories";
 import Partners from "./Partners";
 import ConnectWithUs from "./ConnectWithUs";
 import CoreComponents from "./CoreComponents";
+import Leapgenai from "./Leapgenai";
 
 const Home = (props) => {
   const heroRef = useRef(null);
@@ -40,7 +41,6 @@ const Home = (props) => {
       });
       props.setloadHistory(false);
     }
-    /* eslint-disable react-hooks/exhaustive-deps */
   }, [props.loadHistory]);
 
   return (
@@ -49,6 +49,7 @@ const Home = (props) => {
       <div ref={heroRef}>
         <Hero ref={heroRef} />
       </div>
+      <Leapgenai />
       <PublicServices />
       <CoreValues />
       <CoreComponents />

@@ -44,7 +44,7 @@ const Header = ({ handleMenuClick }) => {
           />
         </svg>
         <ul className="flex gap-[20px] flex-col p-8">
-          <img className="w-[250px] h-[42px]" src={Logo} alt="" />
+          <img className="w-[250px] h-[42px]" src={Logo} />
           <li
             onClick={() => {
               handleMenuClick("hero");
@@ -100,7 +100,7 @@ const Header = ({ handleMenuClick }) => {
       <nav
         className={`flex flex-row items-center justify-between w-full max-md:hidden`}
       >
-        <img className="w-[250px] h-[42px] mr-[1rem]" src={Logo} alt="" />
+        <img className="w-[250px] h-[42px] mr-[1rem]" src={Logo} />
         <ul className="flex gap-[20px]">
           <li onClick={() => handleMenuClick("hero")}>
             <button className="text-[#666666] hover:text-[#0088ff] font-medium text-[15px] cursor-pointer">
@@ -133,7 +133,7 @@ const Header = ({ handleMenuClick }) => {
             </button>
           </li>
           <li onClick={() => handleMenuClick("services")}>
-            <button className="text-[#666666] hover:text-[#0088ff] font-light cursor-pointer">
+            <button className="text-[#666666] hover:text-[#0088ff] font-medium text-[15px] cursor-pointer">
               Contact Us
             </button>
           </li>
