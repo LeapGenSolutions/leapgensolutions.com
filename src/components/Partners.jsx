@@ -38,7 +38,7 @@ const Partners = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center justify-center p-10 bg-white py-[80px]">
+    <section className="flex flex-col items-center justify-center p-10 bg-white py-[80px] max-md:pt-[0px]">
       <h2 className="text-[36px] font-bold gradient-text mb-[40px]">
         ✦ Eco Systems
       </h2>

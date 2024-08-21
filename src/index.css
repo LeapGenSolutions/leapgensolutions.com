@@ -591,10 +591,6 @@ body {
   max-width: 1280px;
 }
 
-.card:hover {
-  transform: translateY(-10px);
-}
-
 /* Connect With Us */
 .connectwithus {
   background-image: linear-gradient(
@@ -650,12 +646,4 @@ body {
   height: auto;
   display: block;
   border-radius: 8px;
-}
-
-.card-container:hover {
-  transform: translateY(-10px);
-}
-
-.card.active {
-  transform: scale(1.05);
 }

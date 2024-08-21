@@ -3,6 +3,8 @@ import { Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
 import Home from "./components/Home";
 import FeatureDetails from "./components/FeatureDetails";
+import ImplementationPlan from "./components/ImplementationPlan";
+import ProfessionalServices from "./components/ProfessionalServices";
 
 function App() {
   const [loadHistory, setloadHistory] = useState(false);
@@ -14,6 +16,24 @@ function App() {
           path="/"
           element={
             <Home loadHistory={loadHistory} setloadHistory={setloadHistory} />
+          }
+        ></Route>
+        <Route
+          path="/ImplementationPlan"
+          element={
+            <ImplementationPlan
+              loadHistory={loadHistory}
+              setloadHistory={setloadHistory}
+            />
+          }
+        ></Route>
+        <Route
+          path="/ProfessionalServices"
+          element={
+            <ProfessionalServices
+              loadHistory={loadHistory}
+              setloadHistory={setloadHistory}
+            />
           }
         ></Route>
         <Route

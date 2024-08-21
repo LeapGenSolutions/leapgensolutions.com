@@ -6,6 +6,7 @@ import CoreComp3 from "../assets/corecomponents/corecomp3.avif";
 import CoreComp4 from "../assets/corecomponents/corecomp4.avif";
 import CoreComp5 from "../assets/corecomponents/corecomp5.avif";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -16,6 +17,7 @@ const Carousel = () => {
       image: CoreComp1,
       description:
         "Specializing in artificial intelligence and data analytics, LeapGen Solutions develops tools and strategies to leverage data for business insights, process automation, and decision support systems. This includes their products like Seismic, Octopus, and SurroundAI.",
+      path: "Data&Ai",
     },
     {
       id: 2,
@@ -23,6 +25,7 @@ const Carousel = () => {
       image: CoreComp2,
       description:
         "LeapGen Solutions provides services to modernize and migrate legacy systems to newer, more efficient platforms. This includes updating software applications to be more scalable, secure, and capable of integrating with modern technologies.",
+      path: "Application Modernization",
     },
     {
       id: 3,
@@ -30,6 +33,7 @@ const Carousel = () => {
       image: CoreComp3,
       description:
         "Expertise in migrating data and systems from on-premises infrastructure to cloud platforms. This helps businesses increase their operational efficiency, reduce costs, and leverage the scalability of cloud computing.",
+      path: "Migration Services",
     },
     {
       id: 4,
@@ -37,6 +41,7 @@ const Carousel = () => {
       image: CoreComp4,
       description:
         "Offering robust Enterprise Resource Planning and Customer Relationship Management solutions that help streamline business operations and enhance customer relationships through better data management and analytics.",
+      path: "ERPC&CRM",
     },
     {
       id: 5,
@@ -44,6 +49,7 @@ const Carousel = () => {
       image: CoreComp5,
       description:
         "Providing skilled professionals to augment a client's existing staff, enabling them to efficiently scale operations or manage projects without the overhead of permanent hires.",
+      path: "StaffAugmentation",
     },
   ];
 
@@ -75,7 +81,9 @@ const Carousel = () => {
               <p className="mt-[120px] mb-[10px] mx-[20px] text-white text-[12px] text-center">
                 {slide.description}
               </p>
-              <Button text="View Details" />
+              <Link to={`/${slide.path}`}>
+                <Button text="View Details" />
+              </Link>
             </div>
           </li>
         ))}

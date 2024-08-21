@@ -26,7 +26,7 @@ function Card({
 
   useEffect(() => {
     if (isActive) {
-      set({ y: 100 }); // Move active card down
+      set({ y: 200 }); // Move active card down
       setZIndex(3); // Bring active card to the front
     } else if (activeCardIndex !== null) {
       set({ y: (index > activeCardIndex ? index - 1 : index) * 100 });
@@ -43,25 +43,30 @@ function Card({
 
   return (
     <animated.div
-      className="card"
+      className="card max-md:flex-col max-md:p-6 m-[20px] max-md:gap-4"
       style={{
         transform: y.interpolate((y) => `translateY(${y}px)`),
         zIndex,
       }}
       onClick={handleClick}
     >
-      <div className="flex flex-col gap-[24px] text-[#666C77]">
+      <div className="flex flex-col gap-[24px] text-[#666C77] max-md:gap-2">
         <div className="flex flex-row items-center gap-[16px]">
-          <h4 className="rounded-full border border-[#eee] h-[64px] w-[64px] flex items-center justify-center text-[36px] text-[#7A7A7A]">
+          <h4 className="rounded-full border border-[#eee] h-[64px] w-[64px] flex items-center justify-center text-[36px] text-[#7A7A7A] max-md:text-[26px]">
             {num}
           </h4>
-          <h3 className="text-[34px] text-[#22221E]">{title}</h3>
+          <h3 className="text-[34px] text-[#22221E] max-md:text-[22px]">
+            {title}
+          </h3>
         </div>
         <p>{desc1}</p>
         <p>{desc2}</p>
         <p>{desc3}</p>
       </div>
-      <img className="w-[360px] h-[510px] rounded-[12px]" src={image} />
+      <img
+        className="w-[360px] h-[510px] rounded-[12px] max-md:w-full max-md:h-fit"
+        src={image} alt=""
+      />
     </animated.div>
   );
 }
@@ -111,13 +116,11 @@ function SuccessStories() {
   return (
     <div className="flex flex-col items-center py-[80px]">
       <h2 className="text-[36px] font-bold gradient-text">✦ Success Stories</h2>
-      <p className="text-[#252525] text-[16px] font-[500] mt-[20px] text-center mb-[50px]">
+      <p className="text-[#252525] text-[16px] font-[500] mt-[20px] text-center mb-[50px] mx-[20px] w-[70%] max-md:text-[14px] max-md:mb-[20px]">
         Dive into LeapGen Solutions Success Stories, where we celebrate the
-        tangible <br /> impacts of our AI initiatives across various industries.
-        These narratives showcase the <br />
-        strategic implementation of our AI and analytics expertise, resulting in
-        significant <br />
-        advancements for our clients.
+        tangible impacts of our AI initiatives across various industries. These
+        narratives showcase the strategic implementation of our AI and analytics
+        expertise, resulting in significant advancements for our clients.
       </p>
       <div className="card-container">{cards}</div>
     </div>

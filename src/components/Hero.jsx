@@ -43,18 +43,27 @@ const Hero = () => {
       style={{
         background: "linear-gradient(180deg,#f6f7ff 0%,rgb(255,255,255) 100%)",
       }}
-      className="flex items-center p-[40px] max-md:h-fit flex-wrap max-md:p-8 gap-[80px]"
+      className="flex items-center p-[40px] max-md:h-fit flex-wrap max-md:p-4 gap-[80px] max-md:gap-8"
     >
       <div className="flex flex-col gap-[20px]">
         <div className="flex flex-col justify-start opacity-100 flex-shrink-0 transform-none">
-          <h1 className="text-[50px] font-bold">Modernize your Solutions</h1>
+          <h1 className="text-[50px] font-bold max-md:text-[25px]">
+            Modernize your Solutions
+          </h1>
           <div className="flex flex-row gap-[15px] items-center">
-            <h1 className="text-[50px] font-bold">powered by</h1>
-            <img className="w-[50px] h-[50px]" src={Logo} />
-            <h1 className="text-[50px] font-bold">Leapgen</h1>
+            <h1 className="text-[50px] font-bold max-md:text-[25px]">
+              powered by
+            </h1>
+            <img
+              className="w-[50px] h-[50px] max-md:w-[25px] max-md:h-[25px]"
+              src={Logo} alt=""
+            />
+            <h1 className="text-[50px] font-bold max-md:text-[25px]">
+              Leapgen
+            </h1>
           </div>
         </div>
-        <h2 className="text-base description">
+        <h2 className="text-base description max-md:text-[15px]">
           Leapgen has expertise in different domains like Healthcare, Federal,
           State
         </h2>
@@ -64,7 +73,7 @@ const Hero = () => {
           {infiniteFeatures.map((card, index) => (
             <div
               key={index}
-              className="relative group overflow-hidden rounded-lg shadow-lg w-[360px] h-[500px]"
+              className="relative group overflow-hidden rounded-lg shadow-lg w-[360px] h-[500px] max-md:w-[200px] max-md:h-[350px]"
             >
               <img
                 src={card.image}
@@ -81,34 +90,38 @@ const Hero = () => {
             </div>
           ))}
         </div>
-        <div className="div_blur" />
-        <div className="div_blur2" />
+        <div className="div_blur max-md:w-[100px] max-md:h-[350px]" />
+        <div className="div_blur2 max-md:w-[100px] max-md:h-[350px]" />
       </div>
-      <div className="flex flex-row items-center justify-between w-full px-4 gap-[50px]">
+      <div className="flex flex-row items-center justify-between w-full px-4 gap-[50px] flex-wrap max-md:px-2">
         <div className="flex flex-col justify-start opacity-100 flex-shrink-0 transform-none flex-1">
-          <h3 className="text-[34px] font-bold">We Helped Businesses In</h3>
+          <h3 className="text-[34px] font-bold max-md:text-[25px]">
+            We Helped Businesses In
+          </h3>
           <div className="flex flex-row gap-[15px] items-center">
-            <h3 className="text-[34px] font-bold">Generating</h3>
-            <a className="text-[34px] font-bold gradient-text">
+            <h3 className="text-[34px] font-bold max-md:text-[25px]">
+              Generating
+            </h3>
+            <button className="text-[34px] font-bold gradient-text max-md:text-[25px]" >
               ✦ 2x Efficiency
-            </a>
+            </button>
           </div>
         </div>
         <div className="flex flex-row items-center justify-between gap-[30px] flex-1">
           <div>
-            <h3 className="text-[50px] font-bold">98%</h3>
+            <h3 className="text-[50px] font-bold max-md:text-[35px]">98%</h3>
             <p className="text-[18px] text-[#353535] font-[600]">
               Client Satisfaction
             </p>
           </div>
           <div>
-            <h3 className="text-[50px] font-bold">89%</h3>
+            <h3 className="text-[50px] font-bold max-md:text-[35px]">89%</h3>
             <p className="text-[18px] text-[#353535] font-[600]">
               Revenue Increased
             </p>
           </div>
           <div>
-            <h3 className="text-[50px] font-bold">15k+</h3>
+            <h3 className="text-[50px] font-bold max-md:text-[35px]">15k+</h3>
             <p className="text-[18px] text-[#353535] font-[600]">
               Happy Customers
             </p>

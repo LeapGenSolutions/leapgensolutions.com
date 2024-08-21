@@ -104,3 +104,31 @@
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
+
+@media (max-width: 768px) {
+  .carousel {
+    width: 360px;
+    overflow: scroll;
+  }
+
+  .carousel__slide {
+    width: 80%;
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  .carousel__track {
+    gap: 5px; /* Reduce gap */
+    overflow-x: scroll;
+  }
+
+  .carousel__title {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .carousel__control {
+    display: none;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+}

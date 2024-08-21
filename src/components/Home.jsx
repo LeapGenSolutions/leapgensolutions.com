@@ -13,22 +13,28 @@ import Leapgenai from "./Leapgenai";
 
 const Home = (props) => {
   const heroRef = useRef(null);
-  const aboutRef = useRef(null);
-  const featuresRef = useRef(null);
-  const domainsRef = useRef(null);
-  const servicesRef = useRef(null);
+  const leapgenRef = useRef(null);
+  const coreRef = useRef(null);
+  const compRef = useRef(null);
+  const successRef = useRef(null);
+  const plansRef = useRef(null);
+  const connectRef = useRef(null);
 
   function handleMenuClick(menuItem) {
     if (menuItem === "hero") {
       heroRef.current.scrollIntoView({ behavior: "smooth" });
-    } else if (menuItem === "about") {
-      aboutRef.current.scrollIntoView({ behavior: "smooth" });
-    } else if (menuItem === "features") {
-      featuresRef.current.scrollIntoView({ behavior: "smooth" });
-    } else if (menuItem === "domains") {
-      domainsRef.current.scrollIntoView({ behavior: "smooth" });
-    } else if (menuItem === "services") {
-      servicesRef.current.scrollIntoView({ behavior: "smooth" });
+    } else if (menuItem === "leapgen") {
+      leapgenRef.current.scrollIntoView({ behavior: "smooth" });
+    } else if (menuItem === "core") {
+      coreRef.current.scrollIntoView({ behavior: "smooth" });
+    } else if (menuItem === "comp") {
+      compRef.current.scrollIntoView({ behavior: "smooth" });
+    } else if (menuItem === "success") {
+      successRef.current.scrollIntoView({ behavior: "smooth" });
+    } else if (menuItem === "plans") {
+      plansRef.current.scrollIntoView({ behavior: "smooth" });
+    } else if (menuItem === "connect") {
+      connectRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }
 
@@ -41,6 +47,7 @@ const Home = (props) => {
       });
       props.setloadHistory(false);
     }
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.loadHistory]);
 
   return (
@@ -49,14 +56,26 @@ const Home = (props) => {
       <div ref={heroRef}>
         <Hero ref={heroRef} />
       </div>
-      <Leapgenai />
+      <div ref={leapgenRef}>
+        <Leapgenai ref={leapgenRef} />
+      </div>
       <PublicServices />
-      <CoreValues />
-      <CoreComponents />
-      <SuccessStories />
-      <Plans />
+      <div ref={coreRef}>
+        <CoreValues ref={coreRef} />
+      </div>
+      <div ref={compRef}>
+        <CoreComponents ref={compRef} />
+      </div>
+      <div ref={successRef}>
+        <SuccessStories ref={successRef} />
+      </div>
+      <div ref={plansRef}>
+        <Plans ref={plansRef} />
+      </div>
       <Partners />
-      <ConnectWithUs />
+      <div ref={connectRef}>
+        <ConnectWithUs ref={connectRef} />
+      </div>
       <Footer handleMenuClick={handleMenuClick} />
     </div>
   );

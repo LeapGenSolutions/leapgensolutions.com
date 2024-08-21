@@ -2,6 +2,7 @@ import React from "react";
 import "../index.css";
 import CheckIcon from "../assets/corevalues/download.svg";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 function Plans() {
   const values = [
@@ -28,7 +29,7 @@ function Plans() {
   ];
 
   return (
-    <div className="flex flex-col items-center py-[80px]">
+    <div className="flex flex-col items-center py-[80px] max-md:mt-[100px]">
       <h2 className="text-[36px] font-bold gradient-text">✦ Plans</h2>
       <p className="text-[#252525] text-[16px] font-[500] mt-[20px] text-center">
         Discover how LeapGen Solutions leverages AI to transform professional
@@ -39,7 +40,10 @@ function Plans() {
       <div className="flex flex-row flex-wrap gap-[40px] mt-[40px] justify-center">
         {values.map((data, index) => {
           return (
-            <div key={index} className="plans_box">
+            <div
+              key={index}
+              className="plans_box max-md:mx-[20px] max-md:w-full"
+            >
               <h3 className="text-[24px] font-bold gradient-text">
                 {data.name}
               </h3>
@@ -50,7 +54,7 @@ function Plans() {
                       key={index}
                       className="flex flex-row items-center gap-[10px]"
                     >
-                      <img className="h-[24px] w-[24px]" src={CheckIcon} />
+                      <img className="h-[24px] w-[24px]" src={CheckIcon} alt="" />
                       <p className="text-[#666666] text-[14px] font-[600]">
                         {item}
                       </p>
@@ -58,7 +62,15 @@ function Plans() {
                   );
                 })}
               </div>
-              <Button text="Get Started" />
+              <Link
+                to={
+                  data.name === "Implementation Plan"
+                    ? "/ImplementationPlan"
+                    : "/ProfessionalServices"
+                }
+              >
+                <Button text="Get Started" />
+              </Link>
             </div>
           );
         })}

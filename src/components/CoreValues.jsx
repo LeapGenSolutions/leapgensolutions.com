@@ -34,9 +34,11 @@ function CoreValues() {
   ];
 
   return (
-    <div className="corevalues_background">
-      <h2 className="text-[36px] font-bold gradient-text">✦ Core Values</h2>
-      <p className="text-[#252525] text-[16px] font-[500] mt-[20px] text-center">
+    <div className="corevalues_background max-md:p-[40px]">
+      <h2 className="text-[36px] font-bold gradient-text max-md:text-[30px]">
+        ✦ Core Values
+      </h2>
+      <p className="text-[#252525] text-[16px] font-[500] mt-[20px] text-center max-md:text-[14px]">
         At LeapGen Solutions, we believe in harnessing the power of knowledge to
         enhance
         <br /> our AI-driven solutions.Explore how our commitment to continuous
@@ -47,8 +49,11 @@ function CoreValues() {
       <div className="flex flex-row flex-wrap gap-[40px] mt-[40px] justify-center">
         {values.map((data, index) => {
           return (
-            <div key={index} className="corevalues_box">
-              <img className="h-[40px] w-[40px]" src={data.image} />
+            <div
+              key={index}
+              className="corevalues_box max-md:w-full max-md:h-full"
+            >
+              <img className="h-[40px] w-[40px]" src={data.image} alt="" />
               <h3 className="text-[20px] font-bold">{data.name}</h3>
               <p className="text-[14px] text-[#53535C]">{data.description}</p>
             </div>
