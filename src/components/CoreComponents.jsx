@@ -1,6 +1,7 @@
 import React from "react";
 import "../index.css";
 import Carousel from "./Carousel";
+import pdf_file from "../assets/Brouchere.pdf"
 
 function CoreComponents() {
   return (
@@ -20,6 +21,12 @@ function CoreComponents() {
         prowess and innovative strategies that empower our clients to lead their
         markets.
       </p>
+      <a
+        className="text-[18px] font-semibold border-[1px] border-transparent bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white hover:from-blue-400 hover:via-blue-500 hover:to-blue-600 transition-all duration-300 ease-in-out px-4 py-2 rounded-lg shadow-lg flex flex-row items-center justify-center gap-2 mb-4"
+        href={pdf_file}
+        download={"LeapGen AI Brochure 2024.pdf"}>
+        Download our brochure now!
+      </a>
       <Carousel />
     </div>
   );
