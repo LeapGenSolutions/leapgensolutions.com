@@ -27,7 +27,7 @@ const Header = ({ handleMenuClick, from }) => {
         />
       </svg>
       {from ? (
-        <div>
+        <div className="flex flex-row w-full justify-between">
           <img className="w-[250px] h-[42px] max-md:hidden" src={Logo} alt="" />
           <Link to={`/`}>
             <Button text="Leapgen Solutions" />
@@ -35,10 +35,15 @@ const Header = ({ handleMenuClick, from }) => {
         </div>
       ) : (
         <>
-          <img className="w-[250px] h-[42px] hidden max-md:block" src={Logo} alt="" />
+          <img
+            className="w-[250px] h-[42px] hidden max-md:block"
+            src={Logo}
+            alt=""
+          />
           <nav
-            className={`fixed top-0 left-0 h-full bg-[#fff] transition-transform duration-300 ease-in-out transform ${navOpen ? "translate-x-0" : "-translate-x-full"
-              } max-md:block border-r-[0.2px] border-r-[#000] w-1/2`}
+            className={`fixed top-0 left-0 h-full bg-[#fff] transition-transform duration-300 ease-in-out transform ${
+              navOpen ? "translate-x-0" : "-translate-x-full"
+            } max-md:block border-r-[0.2px] border-r-[#000] w-1/2`}
           >
             <svg
               width="20"
@@ -86,6 +91,11 @@ const Header = ({ handleMenuClick, from }) => {
                   Solutions
                 </button>
               </li>
+              <Link to="/partners">
+                <button className="text-[#666666] hover:text-[#0088ff] font-medium text-[15px] cursor-pointer">
+                  Partners
+                </button>
+              </Link>
               <li onClick={() => handleMenuClick("connect")}>
                 <button className="text-[#666666] hover:text-[#0088ff] font-medium text-[15px] cursor-pointer">
                   Contact Us
@@ -128,6 +138,11 @@ const Header = ({ handleMenuClick, from }) => {
                   Solutions
                 </button>
               </li>
+              <Link to="/partners">
+                <button className="text-[#666666] hover:text-[#0088ff] font-medium text-[15px] cursor-pointer">
+                  Partners
+                </button>
+              </Link>
               <li onClick={() => handleMenuClick("connect")}>
                 <button className="text-[#666666] hover:text-[#0088ff] font-medium text-[15px] cursor-pointer">
                   Contact Us
