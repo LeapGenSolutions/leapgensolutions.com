@@ -15,10 +15,10 @@ function LearnMorePage() {
   const slides = [
     {
       id: 1,
-      title: "Enhancing Service Excellence with DMI & ServiceNow",
+      title: "Enhancing Service Excellence with LeapGen AI & ServiceNow",
       image: ServiceNowIMG,
       description:
-        "Transforming Industries with Innovative Service Management Solutions Tailored for Success. Leverage DMI's deep integration with ServiceNow to revolutionize your service management across all business areas. Our partnership ensures tailored solutions that streamline processes and elevate operational efficiency to new heights.",
+        "Transforming Industries with Innovative Service Management Solutions Tailored for Success. Leverage LeapGen AI's deep integration with ServiceNow to revolutionize your service management across all business areas. Our partnership ensures tailored solutions that streamline processes and elevate operational efficiency to new heights.",
       points: [
         {
           name: "10+ years",
@@ -26,7 +26,7 @@ function LearnMorePage() {
         },
         {
           name: "4.2M+",
-          desc: "Devices under DMI management.",
+          desc: "Devices under LeapGen AI management.",
         },
         {
           name: "100%",
@@ -41,15 +41,15 @@ function LearnMorePage() {
           desc: "Customized applications developed using ServiceNow for enhanced workflows.",
         },
       ],
-      joint_solutions: `Leveraging our deep expertise with ServiceNow, DMI crafts strategic solutions that revolutionize enterprise service management and operational agility. Our joint offerings with ServiceNow are designed to meet the demands of today’s digital ecosystems. These solutions provide scalable, secure, and innovative approaches that enhance business processes and drive strategic outcomes. Our collaborative efforts ensure that each ServiceNow solution is tailored to address the unique challenges faced by modern enterprises. We focus on delivering value through cutting-edge technology that facilitates seamless service experiences and robust operational workflows.Explore our comprehensive suite of ServiceNow offerings below. Each solution is crafted to optimize efficiency, improve service delivery, and empower your organization to achieve its strategic goals. With DMI and ServiceNow, you can trust that your enterprise will benefit from the latest advancements in service management and operational excellence.`,
+      joint_solutions: `At LeapGen AI, we harness the full potential of Microsoft technologies to support your digital transformation journey. Our partnership with Microsoft allows us to provide a wide array of solutions, from strategic cloud adoption to comprehensive digital overhauls, tailored to address the essential needs of today’s fast-paced business landscape. Below, discover our curated suite of Microsoft solutions designed to enhance operational efficiency, strengthen data security, and accelerate business growth through innovative technology.`,
       path: "servicenow",
     },
     {
       id: 2,
-      title: "Driving Digital Excellence with DMI & Microsoft",
+      title: "Driving Digital Excellence with LeapGen AI & Microsoft",
       image: MicrosoftIMG,
       description:
-        "Transforming Industries with Innovative Microsoft Solutions Tailored for Success. DMI leverages Microsoft's cutting-edge solutions to transform businesses, driving innovation and efficiency. Together, we deliver customized digital experiences that redefine industry standards and achieve exceptional results.",
+        "Achieving Digital Excellence with LeapGen AI and Microsoft. Transforming Industries with Tailored Microsoft Solutions for Success. Leapgen AI harnesses Microsoft’s advanced solutions to revolutionize businesses, fostering innovation and efficiency. Together, we create customized digital experiences that set new industry standards and deliver outstanding results.",
       points: [
         {
           name: "500+",
@@ -72,7 +72,7 @@ function LearnMorePage() {
           desc: "uptime for critical systems, surpassing the 99.5% target",
         },
       ],
-      joint_solutions: `At DMI, we leverage the comprehensive capabilities of Microsoft technologies to empower your digital transformation journey. Our partnership with Microsoft enables us to offer a diverse range of solutions from strategic cloud adoption to complete digital overhaul, all designed to meet the critical needs of modern businesses in a rapidly evolving digital world. Below, explore our curated suite of Microsoft solutions that are structured to enhance your operational efficiency, fortify your data security, and accelerate your business growth with pioneering technology.`,
+      joint_solutions: `At LeapGen AI, we leverage the comprehensive capabilities of Microsoft technologies to empower your digital transformation journey. Our partnership with Microsoft enables us to offer a diverse range of solutions from strategic cloud adoption to complete digital overhaul, all designed to meet the critical needs of modern businesses in a rapidly evolving digital world. Below, explore our curated suite of Microsoft solutions that are structured to enhance your operational efficiency, fortify your data security, and accelerate your business growth with pioneering technology.`,
       path: "microsoft",
     },
     {
@@ -80,7 +80,7 @@ function LearnMorePage() {
       title: "Pioneering AWS Cloud Solutions",
       image: AwsIMG,
       description:
-        "Empower your enterprise with DMI’s expert-driven AWS transformations. Explore how our partnership with Amazon Web Services (AWS) delivers cutting-edge, scalable solutions designed to transform your digital landscape and propel your business forward.",
+        "Empower your enterprise with LeapGen AI’s expert-driven AWS transformations. Explore how our partnership with Amazon Web Services (AWS) delivers cutting-edge, scalable solutions designed to transform your digital landscape and propel your business forward.",
       points: [
         {
           name: "150+",
@@ -103,7 +103,7 @@ function LearnMorePage() {
           desc: "cost reduction for a global insurer's portal.",
         },
       ],
-      joint_solutions: `At DMI, we leverage the power of AWS to drive a spectrum of tailored cloud solutions that enhance innovation, efficiency, and growth for our clients. From strategic insights that align technology investments with your business goals to transformative cloud modernization and migration, we ensure that our solutions integrate seamlessly with your strategic objectives. Our suite of services includes everything from strategic cloud advisory to full-scale digital transformation, designed to meet the unique needs of businesses navigating today’s dynamic technological landscape. Explore our offerings below to see how we can help you optimize operations, secure data, and propel your enterprise into a new era of digital excellence with AWS.`,
+      joint_solutions: `At LeapGen AI, we leverage the power of AWS to drive a spectrum of tailored cloud solutions that enhance innovation, efficiency, and growth for our clients. From strategic insights that align technology investments with your business goals to transformative cloud modernization and migration, we ensure that our solutions integrate seamlessly with your strategic objectives. Our suite of services includes everything from strategic cloud advisory to full-scale digital transformation, designed to meet the unique needs of businesses navigating today’s dynamic technological landscape. Explore our offerings below to see how we can help you optimize operations, secure data, and propel your enterprise into a new era of digital excellence with AWS.`,
       path: "aws",
     },
   ];
