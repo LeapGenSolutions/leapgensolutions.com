@@ -1,49 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ArrowIcon from "../assets/partners/down_arrow.png";
 import GreenLineIcon from "../assets/partners/green_line.svg";
 import GreenLine2Icon from "../assets/partners/green_line2.png";
 import JointSolutuons from "../assets/partners/joint_solutions.jpg";
 import Header from "../components/Header";
 import { useParams } from "react-router-dom";
-import ServiceNowIMG from "../assets/partners/servicenow_inner.jpg";
 import MicrosoftIMG from "../assets/partners/microsoft_inner.jpg";
-import AwsIMG from "../assets/partners/aws_inner.jpg";
 
 function LearnMorePage() {
   const { id } = useParams();
 
   const slides = [
-    {
-      id: 1,
-      title: "Enhancing Service Excellence with LeapGen AI & ServiceNow",
-      image: ServiceNowIMG,
-      description:
-        "Transforming Industries with Innovative Service Management Solutions Tailored for Success. Leverage LeapGen AI's deep integration with ServiceNow to revolutionize your service management across all business areas. Our partnership ensures tailored solutions that streamline processes and elevate operational efficiency to new heights.",
-      points: [
-        {
-          name: "10+ years",
-          desc: "Expertise in ServiceNow solutions and client success.",
-        },
-        {
-          name: "4.2M+",
-          desc: "Devices under LeapGen AI management.",
-        },
-        {
-          name: "100%",
-          desc: "Project success rate with ServiceNow deployments.",
-        },
-        {
-          name: "10+",
-          desc: "Successful comprehensive ServiceNow implementations.",
-        },
-        {
-          name: "100+",
-          desc: "Customized applications developed using ServiceNow for enhanced workflows.",
-        },
-      ],
-      joint_solutions: `At LeapGen AI, we harness the full potential of Microsoft technologies to support your digital transformation journey. Our partnership with Microsoft allows us to provide a wide array of solutions, from strategic cloud adoption to comprehensive digital overhauls, tailored to address the essential needs of today’s fast-paced business landscape. Below, discover our curated suite of Microsoft solutions designed to enhance operational efficiency, strengthen data security, and accelerate business growth through innovative technology.`,
-      path: "servicenow",
-    },
     {
       id: 2,
       title: "Driving Digital Excellence with LeapGen AI & Microsoft",
@@ -52,11 +19,11 @@ function LearnMorePage() {
         "Achieving Digital Excellence with LeapGen AI and Microsoft. Transforming Industries with Tailored Microsoft Solutions for Success. Leapgen AI harnesses Microsoft’s advanced solutions to revolutionize businesses, fostering innovation and efficiency. Together, we create customized digital experiences that set new industry standards and deliver outstanding results.",
       points: [
         {
-          name: "500+",
+          name: "50+",
           desc: "Microsoft certifications held by our team",
         },
         {
-          name: "100+",
+          name: "3",
           desc: "Azure-based mobile and cloud-native apps developed",
         },
         {
@@ -64,7 +31,7 @@ function LearnMorePage() {
           desc: "increase in Art Basel's page views with Microsoft Azure",
         },
         {
-          name: "2000+",
+          name: "500+",
           desc: "user stories managed annually with Microsoft Dynamics",
         },
         {
@@ -74,40 +41,12 @@ function LearnMorePage() {
       ],
       joint_solutions: `At LeapGen AI, we leverage the comprehensive capabilities of Microsoft technologies to empower your digital transformation journey. Our partnership with Microsoft enables us to offer a diverse range of solutions from strategic cloud adoption to complete digital overhaul, all designed to meet the critical needs of modern businesses in a rapidly evolving digital world. Below, explore our curated suite of Microsoft solutions that are structured to enhance your operational efficiency, fortify your data security, and accelerate your business growth with pioneering technology.`,
       path: "microsoft",
-    },
-    {
-      id: 3,
-      title: "Pioneering AWS Cloud Solutions",
-      image: AwsIMG,
-      description:
-        "Empower your enterprise with LeapGen AI’s expert-driven AWS transformations. Explore how our partnership with Amazon Web Services (AWS) delivers cutting-edge, scalable solutions designed to transform your digital landscape and propel your business forward.",
-      points: [
-        {
-          name: "150+",
-          desc: "AWS-certified professionals driving cloud innovation.",
-        },
-        {
-          name: "200k+",
-          desc: "annual savings for a global insurer via AWS.",
-        },
-        {
-          name: "4.2M+",
-          desc: "devices managed in mobile ecosystems.",
-        },
-        {
-          name: "85%",
-          desc: "repeat business rate showcasing client trust.",
-        },
-        {
-          name: "95%",
-          desc: "cost reduction for a global insurer's portal.",
-        },
-      ],
-      joint_solutions: `At LeapGen AI, we leverage the power of AWS to drive a spectrum of tailored cloud solutions that enhance innovation, efficiency, and growth for our clients. From strategic insights that align technology investments with your business goals to transformative cloud modernization and migration, we ensure that our solutions integrate seamlessly with your strategic objectives. Our suite of services includes everything from strategic cloud advisory to full-scale digital transformation, designed to meet the unique needs of businesses navigating today’s dynamic technological landscape. Explore our offerings below to see how we can help you optimize operations, secure data, and propel your enterprise into a new era of digital excellence with AWS.`,
-      path: "aws",
-    },
+    }
   ];
 
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  })
   return (
     <>
       <Header from="details" />
@@ -115,9 +54,7 @@ function LearnMorePage() {
       <div className="bg-gray-900 text-white font-sans">
         <div
           style={{
-            backgroundImage: `linear-gradient(180deg, rgba(255,255,255,0) 0%, #0e1629 100%), url(${
-              slides.filter((data) => data.path === id)[0].image
-            })`,
+            backgroundImage: `linear-gradient(180deg, rgba(255,255,255,0) 0%, #0e1629 100%)`
           }}
         >
           {/* Header Section */}
