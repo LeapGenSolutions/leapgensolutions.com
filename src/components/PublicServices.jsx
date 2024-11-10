@@ -24,7 +24,9 @@ function PublicServices() {
             Streamline operations, enhance citizen engagement, and drive
             efficiency with our bespoke technology services.
           </p>
-          <Button text="Explore Now" />
+          <a href="https://www.leapgengov.com" target="_blank" rel="noreferrer">
+            <Button text="Explore Now" />
+          </a>
         </div>
       </div>
     </div>

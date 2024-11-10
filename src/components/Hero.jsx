@@ -73,7 +73,7 @@ const Hero = () => {
           {infiniteFeatures.map((card, index) => (
             <div
               key={index}
-              className="relative group overflow-hidden rounded-lg shadow-lg w-[360px] h-[500px] max-md:w-[200px] max-md:h-[350px]"
+              className="relative group overflow-hidden rounded-lg hover:cursor-auto shadow-lg w-[360px] h-[500px] max-md:w-[200px] max-md:h-[350px]"
             >
               <img
                 src={card.image}
@@ -121,7 +121,7 @@ const Hero = () => {
             </p>
           </div>
           <div>
-            <h3 className="text-[50px] font-bold max-md:text-[35px]">15k+</h3>
+            <h3 className="text-[50px] font-bold max-md:text-[35px]">50+</h3>
             <p className="text-[18px] text-[#353535] font-[600]">
               Happy Customers
             </p>

@@ -39,16 +39,16 @@ function App() {
           }
         ></Route>
         <Route
-          path="/:id"
-          element={<FeatureDetails setloadHistory={setloadHistory} />}
-        ></Route>
-        <Route
           path="/partners"
           element={<PartnersPage setloadHistory={setloadHistory} />}
         ></Route>
         <Route
           path="/partners/:id"
           element={<LearnMorePage setloadHistory={setloadHistory} />}
+        ></Route>
+        <Route
+          path="/:id"
+          element={<FeatureDetails setloadHistory={setloadHistory} />}
         ></Route>
       </Routes>
     </div>

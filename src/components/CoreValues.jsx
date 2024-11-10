@@ -14,7 +14,7 @@ function CoreValues() {
       image: Core1,
     },
     {
-      name: "Teach and learn.",
+      name: "Teach and learn",
       description:
         "At LeapGen solutions, we embrace a dynamic cycle of teaching and learning, continually evolving our expertise to stay at the forefront of AI technology. We not only educate our clients on the latest AI advancements but also learn from each collaboration, ensuring that our solutions and services are both innovative and deeply informed by real-world applications. This approach empowers us to enhance and adapt our offerings to meet the ever-changing needs of the industries we serve.",
       image: Core2,

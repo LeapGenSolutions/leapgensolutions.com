@@ -1,7 +1,12 @@
 import React from "react";
 import Logo from "../assets/logo_full.png";
+import { useNavigate } from "react-router-dom";
 
-function Footer({ handleMenuClick }) {
+function Footer() {
+  const navigate = useNavigate();
+  const handleMenuClick = (menuItem) => {
+    navigate(`/#${menuItem}`);
+  };
   return (
     <footer className="bg-[#FBFBFB] text-white px-[95px] pt-[80px] pb-[40px] border-t-[0.2px] border-t-[rgb(251, 251, 251)] flex flex-col gap-[50px] max-md:p-[30px]">
       <div className="mx-auto flex flex-col items-center justify-center gap-[25px]">

@@ -60,8 +60,8 @@ function PartnersPage() {
                   Our partnerships amplify our capabilities, merging LeapGen AI’s
                   industry insights with cutting-edge technologies from our
                   partners. This synergy has not only provided our clients with
-                  impactful advancements but also resulted in the launch of 10
-                  innovative products last year.
+                  impactful advancements but also resulted in the launch of 3
+                  innovative products this year.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center mx-[22.5px] p-[30px] hover:bg-[#007bff] transition-colors">
@@ -92,8 +92,8 @@ function PartnersPage() {
                 <p className="text-[18px]">
                   Our global partnerships address unique client challenges
                   worldwide, enhancing our project management across continents
-                  and boosting market penetration by 20% in emerging markets
-                  over the past two years.
+                  and boosting market penetration by 33% in emerging markets
+                  this year.
                 </p>
               </div>
             </div>
